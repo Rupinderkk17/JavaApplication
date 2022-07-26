@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   android:layout_marginTop="@dimen/margin_60dp"
+    android:textAlignment="gravity"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your Name"
+        android:textSize="@dimen/margin_20sp"
+        android:layout_marginTop="@dimen/margin_30dp">
+    </TextView>
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="InvalidId"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="@string/ENTER_NAME"
+
+     />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your email"
+        android:textSize="@dimen/margin_20sp"
+        android:layout_marginTop="@dimen/margin_30dp">
+    </TextView>
+    <EditText
+        android:id="@+id/etEmailaddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="InvalidId"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="@string/ENTER_YOUR_EMAIL"
+       />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Your Phoneno"
+        android:textSize="@dimen/margin_20sp"
+        android:layout_marginTop="@dimen/margin_30dp">
+    </TextView>
+    <EditText
+        android:id="@+id/etPhoneno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="InvalidId"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="@string/ENTER_YOUR_PHONENO"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter password"
+        android:textSize="@dimen/margin_20sp"
+        android:layout_marginTop="@dimen/margin_30dp">
+    </TextView>
+    <EditText
+        android:id="@+id/etpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="InvalidId"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="@string/ENTER_PASSWORD"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm password"
+        android:textSize="@dimen/margin_20sp"
+        android:layout_marginTop="@dimen/margin_30dp">
+    </TextView>
+    <EditText
+        android:id="@+id/etconfirmpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="DuplicateIds,InvalidId"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="@string/CONFIRM_PASSWORD" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How you want to be addressed?"
+        android:textSize="@dimen/margin_20sp">
+    </TextView>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:textSize="@dimen/margin_20sp">
+        </RadioButton>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:textSize="@dimen/margin_20sp">
+        </RadioButton>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Other"
+            android:textSize="@dimen/margin_20sp">
+        </RadioButton>
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="SIGN UP">
+
+    </Button>
+
+</LinearLayout>

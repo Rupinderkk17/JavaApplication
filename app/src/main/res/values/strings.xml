@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Java Application</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="LOGIN">LOGIN</string>
+    <string name="ENTER_NAME">ENTER_NAME</string>
+    <string name="ENTER_YOUR_EMAIL">ENTER YOUR EMAIL</string>
+    <string name="ENTER_YOUR_PHONENO">ENTER YOUR PHONENO</string>
+    <string name="ENTER_PASSWORD">ENTER PASSWORD</string>
+    <string name="CONFIRM_PASSWORD">CONFIRM PASSWORD</string>
+    <string name="pass_length">pass length</string>
+    <string name="enter_pass">enter pass</string>
+    <string name="login_success">login success</string>
+    <string name="imp_soon">Implemented soon</string>
+</resources>
