@@ -13,4 +13,9 @@
     <string name="enter_pass">enter pass</string>
     <string name="login_success">login success</string>
     <string name="imp_soon">Implemented soon</string>
+    <string name="login">login</string>
+    <string name="forgot">forgot</string>
+    <string name="pass">pass</string>
+    <string name="email">email</string>
+    <string name="enter_name">enter_name</string>
 </resources>

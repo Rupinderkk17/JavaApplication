@@ -12,26 +12,21 @@ class MainActivity : AppCompatActivity() {
     lateinit var etName: EditText
     lateinit var etPassword: EditText
     lateinit var btnLogin: Button
-    lateinit var tvForgotPass: TextView
+    lateinit var tvSignUp:TextView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         etName=findViewById(R.id.etName)
         etPassword=findViewById(R.id.etPassword)
         btnLogin=findViewById(R.id.btnLogin)
-        tvForgotPass=findViewById(R.id.tvForgotPass)
-
-        tvForgotPass.setOnClickListener{
-            var intent = Intent(this,signup::class.java)
-            startActivity(intent)
-            Toast.makeText(this,resources.getString(R.string.imp_soon), Toast.LENGTH_LONG).show()
-        }
+        tvSignUp=findViewById(R.id.tvForgotPass)
         btnLogin.setOnClickListener{
             var name=etName.text.toString()
             var Password=etPassword.text.toString()
             if(name.isNullOrEmpty()==true){
-                etName.error=resources.getString(R.string.ENTER_NAME)
+                etName.error=resources.getString(R.string.enter_name)
                 etName.requestFocus()
+
             }
             else if(Password.isNullOrEmpty()==true){
                 etPassword.error=resources.getString(R.string.enter_pass)
@@ -39,11 +34,13 @@ class MainActivity : AppCompatActivity() {
             }
             else if (Password.length<6){
                 etPassword.error=resources.getString(R.string.pass_length)
-                etPassword.requestFocus()
             }
             else {
-                var intent = Intent()
                 Toast.makeText(this, resources.getString(R.string.login_success), Toast.LENGTH_LONG).show()
+            }
+            tvSignUp.setOnClickListener {
+                var intent2= Intent(this,Signup::class.java)
+                startActivity(intent2)
             }
         }
 
